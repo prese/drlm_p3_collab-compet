@@ -11,7 +11,7 @@ def hidden_init(layer):
 
 class Actor(nn.Module):
 
-    def __init__(self, state_size, action_size, seed, fc1_units=128, fc2_units=256):
+    def __init__(self, state_size, action_size, seed, fc1_units=64, fc2_units=128):
         """
         Params
         ======
@@ -43,7 +43,7 @@ class Actor(nn.Module):
 
 
 class Critic(nn.Module):
-    def __init__(self, state_size, action_size, seed, fc1_units=128, fc2_units=256):
+    def __init__(self, state_size, action_size, seed, fc1_units=64, fc2_units=128):
         """
         Params
         ======
